@@ -1,5 +1,5 @@
 class SmartCase
-  def initialize(o)
+  def initialize(o = nil)
     @o, @when, @then = o, [], []
     instance_eval(&Proc.new) if block_given?
     self

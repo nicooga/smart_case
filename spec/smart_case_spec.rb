@@ -1,30 +1,30 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe SmartCase do
-  it "succeeds" do
+  it 'succeeds' do
     c = SmartCase.new(2) do
       w { |x| x == 2 }
-      t { "Your number is 2!" }
+      t { 'Your number is 2!' }
 
       w { |x| x == 3 }
-      t { "Your number is 3!" }
+      t { 'Your number is 3!' }
     end
 
-    expect(c.call).to eq("Your number is 2!")
-    expect(c.call(3)).to eq("Your number is 3!")
+    expect(c.call).to eq('Your number is 2!')
+    expect(c.call(3)).to eq('Your number is 3!')
   end
 
   it 'accepts procs' do
     c = SmartCase.new(2) do
       w ->(x) { x == 2 }
-      t ->(x) { "Your number is 2!" }
+      t ->(x) { 'Your number is 2!' }
 
       w ->(x) { x == 3 }
-      t ->(x) { "Your number is 3!" }
+      t ->(x) { 'Your number is 3!' }
     end
 
-    expect(c.call).to eq("Your number is 2!")
-    expect(c.call(3)).to eq("Your number is 3!")
+    expect(c.call).to eq('Your number is 2!')
+    expect(c.call(3)).to eq('Your number is 3!')
   end
 
   it 'integrates into Kernel' do
