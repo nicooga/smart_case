@@ -2,7 +2,7 @@ smart_case
 ==========
 A while ago came up with the idea that it would be cool if ruby `case` statements accepted blocks for the condition evaluation. `SmartCase` is the result.
 
-### Installation
+### Installation [![Gem Version](https://badge.fury.io/rb/smart_case.png)](http://badge.fury.io/rb/smart_case)
 
 ```bash
 $ gem install smart_case
