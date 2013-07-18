@@ -17,10 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "smart_case"
   gem.homepage = "http://github.com/nicooga/smart_case"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Better case statements for ruby}
+  gem.description = %Q{Better case statements for ruby}
   gem.email = "2112.oga@gmail.com"
   gem.authors = ["Nicolas Oga"]
+  gem.version = '0.0.1'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -29,11 +30,6 @@ require 'rspec/core'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
-end
-
-RSpec::Core::RakeTask.new(:rcov) do |spec|
-  spec.pattern = 'spec/**/*_spec.rb'
-  spec.rcov = true
 end
 
 task :default => :spec
