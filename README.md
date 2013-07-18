@@ -62,6 +62,18 @@ sm.instance_eval do
 end
 => "Your number is 5!"
 ```
+Pass `multi: true` option to get an array of results, instead of breaking execution when an `w` statement evaluates to `true`:
+
+```ruby
+smart_case(10, multi: true) do
+  w { |x| x == 10 }
+  t { 'Your number is 10!' }
+
+  w { |x| x < 100 }
+  t { 'Your number is lesser than 100!' }
+end
+=> ["Your number is 10!", "Your number is lesser than 100!"]
+```
 
 ### Contributing to smart_case
 + Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.

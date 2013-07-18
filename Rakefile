@@ -21,7 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Better case statements for ruby}
   gem.email = "2112.oga@gmail.com"
   gem.authors = ["Nicolas Oga"]
-  gem.version = '0.0.2'
+  gem.version = '0.0.3'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

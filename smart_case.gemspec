@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "smart_case"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nicolas Oga"]
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.md",
     "Rakefile",
+    "benchmarking.rb",
     "lib/smart_case.rb",
     "lib/version.rb",
     "smart_case.gemspec",
